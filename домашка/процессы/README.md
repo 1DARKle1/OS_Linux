@@ -15,15 +15,15 @@ bg
 jobs
 ```
 
-![xeyes в фоне](01-xeyes.png)
+![xeyes в фоне](screenshots/01-xeyes.png)
 
-![jobs](02-jobs.png)
+![jobs](screenshots/02-jobs.png)
 
-![fg](03-fg.png)
+![fg](screenshots/03-fg.png)
 
-![Процесс остановлен](04-stopped.png)
+![Процесс остановлен](screenshots/04-stopped.png)
 
-![bg и jobs](05-bg.png)
+![bg и jobs](screenshots/05-bg.png)
 
 ## ps
 
@@ -36,11 +36,11 @@ sleep 240 &
 ps -o pid,ppid,uid,euid,ni,stat,cmd -p $!
 ```
 
-![ps](06-ps.png)
+![ps](screenshots/06-ps.png)
 
-![ps -f](07-psf.png)
+![ps -f](screenshots/07-psf.png)
 
-![Атрибуты процесса](08-attrs.png)
+![Атрибуты процесса](screenshots/08-attrs.png)
 
 ## nice и renice
 
@@ -54,11 +54,11 @@ renice 12 -p $!
 ps -o pid,ni,cmd -p $!
 ```
 
-![nice и egrep](09-nice.png)
+![nice и egrep](screenshots/09-nice.png)
 
-![nice у sleep](10-nice-ps.png)
+![nice у sleep](screenshots/10-nice-ps.png)
 
-![renice](11-renice.png)
+![renice](screenshots/11-renice.png)
 
 ## nohup
 
@@ -71,9 +71,9 @@ kill -s HUP $!
 ps -o pid,stat,cmd -p $!
 ```
 
-![nohup](12-nohup.png)
+![nohup](screenshots/12-nohup.png)
 
-![Процесс после SIGHUP](13-hup.png)
+![Процесс после SIGHUP](screenshots/13-hup.png)
 
 ## kill и killall
 
@@ -93,9 +93,9 @@ killall -s TERM sleep
 jobs
 ```
 
-![kill](14-kill.png)
+![kill](screenshots/14-kill.png)
 
-![killall](15-killall.png)
+![killall](screenshots/15-killall.png)
 
 Список сигналов:
 
@@ -103,7 +103,7 @@ jobs
 kill -l
 ```
 
-![Сигналы](16-signals.png)
+![Сигналы](screenshots/16-signals.png)
 
 ## top
 
@@ -114,13 +114,13 @@ top -b -n 1 | head -n 15
 top
 ```
 
-![Снимок top](17-top.png)
+![Снимок top](screenshots/17-top.png)
 
-![Живой top](18-top-live.png)
+![Живой top](screenshots/18-top-live.png)
 
-![Сортировка по памяти](19-top-mem.png)
+![Сортировка по памяти](screenshots/19-top-mem.png)
 
-![Процессы пользователя darkle](20-top-user.png)
+![Процессы пользователя darkle](screenshots/20-top-user.png)
 
 ## at
 
@@ -130,4 +130,4 @@ top
 command -v at || echo AT_MISSING
 ```
 
-![Проверка at](21-at.png)
+![Проверка at](screenshots/21-at.png)
